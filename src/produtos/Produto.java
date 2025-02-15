@@ -10,4 +10,8 @@ public abstract class Produto {
         this.nome = nome;
         this.preco = preco;
     }
+
+    public String obterDados(){
+        return String.format("ID: %d | Nome: %s | Preço Original: %.2f", this.id, this.nome, this.preco);
+    }
 }
