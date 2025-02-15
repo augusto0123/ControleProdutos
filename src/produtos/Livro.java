@@ -7,4 +7,9 @@ public class Livro extends Produto{
         super(id, nome, preco);
         this.editora = editora;
     }
+
+    @Override
+    public double calcularPrecoComImposto() {
+        return preco * 1.08;
+    }
 }

@@ -7,4 +7,9 @@ public class Eletronico extends Produto{
         super(id, nome, preco);
         this.peso = peso;
     }
+
+    @Override
+    public double calcularPrecoComImposto() {
+        return preco * 1.15;
+    }
 }
